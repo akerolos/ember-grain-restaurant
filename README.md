@@ -6,7 +6,7 @@ A production-grade, single-page website for a modern specialty coffee shop and r
 
 ## 📸 Preview
 
-> Open `index.html` in a modern browser to view the site. No build step required.
+> Open `(https://akerolos.github.io/ember-grain-restaurant/)` in a browser to view the site..
 
 **Sections:** Sticky Header · Hero · Our Story · Menu (Tabbed) · Testimonials Slider · Reservation Form · Footer
 
