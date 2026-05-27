@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ember & Grain — A modern specialty coffee shop and restaurant in the heart of the city. Handcrafted coffee, artisanal food, and a cozy atmosphere." />
+  <meta name="theme-color" content="#1A1A1A" />
+  <title>Ember & Grain — Specialty Coffee & Restaurant</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Ember & Grain Home">
+        <span class="logo-mark" aria-hidden="true">✦</span>
+        <span class="logo-text">Ember <em>&</em> Grain</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list" role="list">
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#reservation" class="nav-link">Reserve</a></li>
+        </ul>
+        <a href="#reservation" class="btn btn-nav" aria-label="Book a table">Book a Table</a>
+      </nav>
+
+      <button
+        class="burger"
+        id="burger-btn"
+        aria-label="Toggle mobile menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grain"></div>
+        <div class="hero-glow hero-glow--left"></div>
+        <div class="hero-glow hero-glow--right"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-eyebrow" aria-label="Established 2018">
+          <span class="eyebrow-line"></span>
+          <span>Est. 2018 · Specialty Coffee</span>
+          <span class="eyebrow-line"></span>
+        </div>
+
+        <h1 id="hero-heading" class="hero-title">
+          Where Every<br />
+          <em>Cup Tells</em><br />
+          a Story
+        </h1>
+
+        <p class="hero-subtitle">
+          Single-origin beans, slow-poured with intention.<br />
+          Food crafted from the season's finest.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary">
+            <span>View Our Menu</span>
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#story" class="btn btn-ghost">Our Story</a>
+        </div>
+
+        <div class="hero-stats" role="list" aria-label="Quick facts">
+          <div class="hero-stat" role="listitem">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Origin Blends</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat" role="listitem">
+            <span class="stat-number">7am</span>
+            <span class="stat-label">Daily Open</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat" role="listitem">
+            <span class="stat-number">4.9★</span>
+            <span class="stat-label">Guest Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ===================== STORY STRIP ===================== -->
+    <section class="story-strip" id="story" aria-labelledby="story-heading">
+      <div class="container story-inner">
+        <div class="story-image-col" aria-hidden="true">
+          <div class="story-image-frame">
+            <div class="story-img-placeholder">
+              <div class="img-decor">☕</div>
+            </div>
+            <div class="story-badge">
+              <span>Roasted</span>
+              <strong>In-House</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-text-col">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 id="story-heading" class="section-title">Grown from a passion for the perfect cup</h2>
+          <p class="story-body">Ember & Grain began as a single espresso cart on Maple Street — just a hand-grinder, a dream, and an embarrassingly overpowered kettle. Today we're a full kitchen and café, but the obsession with sourcing and craft has never wavered.</p>
+          <p class="story-body">Every bean we roast is traceable to its farm. Every dish on our menu changes with the season. We believe great coffee and honest food are acts of hospitality — and we take both seriously.</p>
+          <ul class="story-pillars" role="list" aria-label="Our values">
+            <li>
+              <span class="pillar-icon" aria-hidden="true">✦</span>
+              <div>
+                <strong>Direct Trade</strong>
+                <p>Relationships with farmers, not brokers.</p>
+              </div>
+            </li>
+            <li>
+              <span class="pillar-icon" aria-hidden="true">✦</span>
+              <div>
+                <strong>Seasonal Kitchen</strong>
+                <p>The menu follows the harvest, always.</p>
+              </div>
+            </li>
+            <li>
+              <span class="pillar-icon" aria-hidden="true">✦</span>
+              <div>
+                <strong>Zero-Waste Roasting</strong>
+                <p>Chaff composted, bags reused, waste minimal.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+    <section class="menu-section" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">What We Serve</p>
+          <h2 id="menu-heading" class="section-title">Our Menu</h2>
+          <p class="section-subtitle">Crafted daily from the best ingredients we can find.</p>
+        </div>
+
+        <!-- Tab Controls -->
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button
+            class="tab-btn active"
+            id="tab-coffee"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-coffee"
+            data-tab="coffee"
+          >
+            <span aria-hidden="true">☕</span> Coffee
+          </button>
+          <button
+            class="tab-btn"
+            id="tab-food"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-food"
+            data-tab="food"
+          >
+            <span aria-hidden="true">🍽</span> Food
+          </button>
+        </div>
+
+        <!-- Coffee Panel -->
+        <div
+          class="menu-panel active"
+          id="panel-coffee"
+          role="tabpanel"
+          aria-labelledby="tab-coffee"
+        >
+          <div class="menu-grid">
+
+            <article class="menu-card featured" aria-label="Signature Espresso — featured">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <div class="menu-card-label">Signature</div>
+                <h3 class="menu-card-title">The Ember Espresso</h3>
+                <p class="menu-card-desc">Our house blend of Ethiopian Yirgacheffe & Colombian Huila. Notes of dark chocolate, blackcurrant, and a lingering caramel finish.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$4.50</span>
+                  <span class="menu-tag">Double Shot</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <h3 class="menu-card-title">Cortado</h3>
+                <p class="menu-card-desc">Equal parts espresso and warm steamed milk. Balanced, bold, and beautiful in its simplicity.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$5.00</span>
+                  <span class="menu-tag">4 oz</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <h3 class="menu-card-title">Oat Flat White</h3>
+                <p class="menu-card-desc">Silky oat milk microfoam over a ristretto base. Naturally sweet, perfectly textured.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$6.00</span>
+                  <span class="menu-tag">6 oz</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <h3 class="menu-card-title">Pour-Over Flight</h3>
+                <p class="menu-card-desc">Three 4oz pours of our rotating single-origins. Ask your barista what's on the bar today.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$14.00</span>
+                  <span class="menu-tag">Seasonal</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <h3 class="menu-card-title">Cold Brew Tonic</h3>
+                <p class="menu-card-desc">18-hour cold brew concentrate cut with premium tonic water and a twist of orange peel.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$7.50</span>
+                  <span class="menu-tag">Iced</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <h3 class="menu-card-title">Honey Lavender Latte</h3>
+                <p class="menu-card-desc">House-made lavender syrup and local raw honey with your choice of milk. Floral and grounding.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$7.00</span>
+                  <span class="menu-tag">Specialty</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Food Panel -->
+        <div
+          class="menu-panel"
+          id="panel-food"
+          role="tabpanel"
+          aria-labelledby="tab-food"
+          hidden
+        >
+          <div class="menu-grid">
+
+            <article class="menu-card featured" aria-label="Grain Avocado Toast — featured">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <div class="menu-card-label">Chef's Pick</div>
+                <h3 class="menu-card-title">Grain Avocado Toast</h3>
+                <p class="menu-card-desc">House sourdough, whipped ricotta, smashed avocado, pickled radish, everything seasoning and a soft poached egg.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$16.00</span>
+                  <span class="menu-tag">Vegetarian</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <h3 class="menu-card-title">Seasonal Grain Bowl</h3>
+                <p class="menu-card-desc">Farro, roasted root vegetables, tahini dressing, pomegranate seeds, and toasted pepitas. Ask about today's harvest additions.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$18.00</span>
+                  <span class="menu-tag">Vegan</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <h3 class="menu-card-title">Smoked Salmon Tartine</h3>
+                <p class="menu-card-desc">Rye crispbread, crème fraîche, cold-smoked salmon, capers, dill, and micro greens from our rooftop garden.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$19.00</span>
+                  <span class="menu-tag">Signature</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <h3 class="menu-card-title">Ember French Toast</h3>
+                <p class="menu-card-desc">Brioche soaked in vanilla-espresso custard, pan-seared, topped with mascarpone, candied walnuts, and dark amber maple.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$17.00</span>
+                  <span class="menu-tag">Weekend Brunch</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <h3 class="menu-card-title">Cardamom Morning Bun</h3>
+                <p class="menu-card-desc">Laminated dough rolled in cardamom sugar, orange zest glaze. Baked fresh each morning, sold until they're gone.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$5.50</span>
+                  <span class="menu-tag">Bakery</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card">
+              <div class="menu-card-inner">
+                <div class="menu-card-icon" aria-hidden="true">◈</div>
+                <h3 class="menu-card-title">Burrata &amp; Heirloom Toast</h3>
+                <p class="menu-card-desc">Grilled levain, torn burrata, heirloom tomatoes, Calabrian chili oil, fresh basil, and aged balsamic.</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$15.00</span>
+                  <span class="menu-tag">Seasonal</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="menu-footer-note" aria-live="polite">
+          <p>All items sourced locally where possible. Allergen information available on request.</p>
+          <a href="#reservation" class="btn btn-outline">Reserve Your Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Guest Voices</p>
+          <h2 id="testimonials-heading" class="section-title">What Our Guests Say</h2>
+        </div>
+
+        <div class="testimonials-slider" role="region" aria-label="Testimonials slider" aria-live="polite">
+          <div class="testimonials-track" id="testimonials-track">
+
+            <blockquote class="testimonial-card" aria-label="Review from Mia Chen">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+              <p class="testimonial-text">"The pour-over flight was a revelation. I've never experienced coffee that actually tastes like the tasting notes describe — real dark cherry, actual chocolate. My new Sunday ritual."</p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">MC</div>
+                <div>
+                  <cite class="author-name">Mia Chen</cite>
+                  <span class="author-detail">Coffee Enthusiast · Regular Guest</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card" aria-label="Review from James Hartley">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+              <p class="testimonial-text">"Came for the coffee, stayed three hours for the food. That grain bowl with the pomegranate was the best lunch I've had in this city. The staff actually know what they're talking about."</p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">JH</div>
+                <div>
+                  <cite class="author-name">James Hartley</cite>
+                  <span class="author-detail">Food Writer · First-Time Visitor</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card" aria-label="Review from Priya Nair">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+              <p class="testimonial-text">"The atmosphere at Ember & Grain is what coffee shops should aspire to be — warm without being kitschy, quiet enough to focus, beautiful enough to just sit and breathe. A true third place."</p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">PN</div>
+                <div>
+                  <cite class="author-name">Priya Nair</cite>
+                  <span class="author-detail">Interior Designer · Loyal Regular</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card" aria-label="Review from Daniel Osei">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+              <p class="testimonial-text">"As someone who grew up near a coffee farm in Ghana, I appreciate how seriously they take origin. They know the farmers by name. That respect comes through in every cup. Deeply impressive."</p>
+              <footer class="testimonial-author">
+                <div class="author-avatar" aria-hidden="true">DO</div>
+                <div>
+                  <cite class="author-name">Daniel Osei</cite>
+                  <span class="author-detail">Agricultural Consultant · Occasional Guest</span>
+                </div>
+              </footer>
+            </blockquote>
+
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls" role="group" aria-label="Testimonial navigation">
+          <button class="slider-btn slider-btn--prev" id="slider-prev" aria-label="Previous testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <div class="slider-dots" id="slider-dots" role="list" aria-label="Testimonial indicators"></div>
+          <button class="slider-btn slider-btn--next" id="slider-next" aria-label="Next testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESERVATION ===================== -->
+    <section class="reservation-section" id="reservation" aria-labelledby="reservation-heading">
+      <div class="reservation-bg" aria-hidden="true">
+        <div class="res-glow"></div>
+      </div>
+      <div class="container reservation-inner">
+        <div class="reservation-text-col">
+          <p class="section-eyebrow">Reserve a Table</p>
+          <h2 id="reservation-heading" class="section-title">Join Us for an<br /><em>Unforgettable</em><br />Experience</h2>
+          <p class="reservation-info-text">We hold reservations for up to 15 minutes past booking time. Walk-ins welcome based on availability.</p>
+
+          <ul class="hours-list" role="list" aria-label="Opening hours">
+            <li>
+              <span class="hours-day">Monday – Friday</span>
+              <span class="hours-time">7:00 AM – 9:00 PM</span>
+            </li>
+            <li>
+              <span class="hours-day">Saturday</span>
+              <span class="hours-time">8:00 AM – 10:00 PM</span>
+            </li>
+            <li>
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time">8:00 AM – 6:00 PM</span>
+            </li>
+          </ul>
+
+          <address class="contact-info" aria-label="Location and contact">
+            <p>
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              48 Maple Street, Arts District
+            </p>
+            <p>
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.1 12.18 19.79 19.79 0 0 1 1.04 3.56 2 2 0 0 1 3 1.38h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.28a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg>
+              (555) 012-3456
+            </p>
+          </address>
+        </div>
+
+        <div class="reservation-form-col">
+          <form
+            class="reservation-form"
+            id="reservation-form"
+            novalidate
+            aria-label="Reservation booking form"
+          >
+            <div class="form-success" id="form-success" role="alert" aria-live="assertive" hidden>
+              <span class="success-icon" aria-hidden="true">✦</span>
+              <h3>Reservation Confirmed!</h3>
+              <p>We'll see you soon. A confirmation has been sent to your email.</p>
+            </div>
+
+            <div class="form-fields" id="form-fields">
+              <div class="form-row form-row--two">
+                <div class="form-group">
+                  <label for="guest-name" class="form-label">Full Name <span aria-hidden="true" class="required">*</span></label>
+                  <input
+                    type="text"
+                    id="guest-name"
+                    name="guest-name"
+                    class="form-input"
+                    placeholder="Jane Doe"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                    aria-describedby="guest-name-error"
+                  />
+                  <span class="form-error" id="guest-name-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="guest-email" class="form-label">Email <span aria-hidden="true" class="required">*</span></label>
+                  <input
+                    type="email"
+                    id="guest-email"
+                    name="guest-email"
+                    class="form-input"
+                    placeholder="jane@example.com"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                    aria-describedby="guest-email-error"
+                  />
+                  <span class="form-error" id="guest-email-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-row form-row--two">
+                <div class="form-group">
+                  <label for="res-date" class="form-label">Date <span aria-hidden="true" class="required">*</span></label>
+                  <input
+                    type="date"
+                    id="res-date"
+                    name="res-date"
+                    class="form-input"
+                    required
+                    aria-required="true"
+                    aria-describedby="res-date-error"
+                  />
+                  <span class="form-error" id="res-date-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-time" class="form-label">Time <span aria-hidden="true" class="required">*</span></label>
+                  <select
+                    id="res-time"
+                    name="res-time"
+                    class="form-input form-select"
+                    required
+                    aria-required="true"
+                    aria-describedby="res-time-error"
+                  >
+                    <option value="" disabled selected>Select a time</option>
+                    <option value="08:00">8:00 AM</option>
+                    <option value="09:00">9:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                  </select>
+                  <span class="form-error" id="res-time-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-row form-row--two">
+                <div class="form-group">
+                  <label for="party-size" class="form-label">Party Size <span aria-hidden="true" class="required">*</span></label>
+                  <select
+                    id="party-size"
+                    name="party-size"
+                    class="form-input form-select"
+                    required
+                    aria-required="true"
+                    aria-describedby="party-size-error"
+                  >
+                    <option value="" disabled selected>Guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                    <option value="7+">7+ Guests</option>
+                  </select>
+                  <span class="form-error" id="party-size-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="guest-phone" class="form-label">Phone</label>
+                  <input
+                    type="tel"
+                    id="guest-phone"
+                    name="guest-phone"
+                    class="form-input"
+                    placeholder="(555) 000-0000"
+                    autocomplete="tel"
+                    aria-describedby="guest-phone-error"
+                  />
+                  <span class="form-error" id="guest-phone-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="special-requests" class="form-label">Special Requests</label>
+                <textarea
+                  id="special-requests"
+                  name="special-requests"
+                  class="form-input form-textarea"
+                  placeholder="Dietary needs, celebrations, seating preferences..."
+                  rows="3"
+                  aria-describedby="requests-hint"
+                ></textarea>
+                <span class="form-hint" id="requests-hint">Optional. We'll do our best to accommodate.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                <span class="btn-text">Confirm Reservation</span>
+                <span class="btn-loader" aria-hidden="true" hidden>
+                  <span class="spinner"></span> Booking…
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo" aria-label="Ember & Grain Home">
+          <span class="logo-mark" aria-hidden="true">✦</span>
+          <span class="logo-text">Ember <em>&</em> Grain</span>
+        </a>
+        <p class="footer-tagline">Specialty coffee & honest food,<br />served with intention.</p>
+        <nav class="footer-social" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter / X">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </nav>
+      </div>
+
+      <nav class="footer-nav-col" aria-label="Quick links">
+        <h3 class="footer-nav-title">Quick Links</h3>
+        <ul role="list">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#reservation">Reserve a Table</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-nav-col" aria-label="Visit us">
+        <h3 class="footer-nav-title">Visit Us</h3>
+        <address>
+          <p>48 Maple Street<br />Arts District, NY 10001</p>
+          <p><a href="tel:+15550123456">(555) 012-3456</a></p>
+          <p><a href="mailto:hello@emberandgrain.com">hello@emberandgrain.com</a></p>
+        </address>
+      </div>
+
+      <div class="footer-nav-col">
+        <h3 class="footer-nav-title">Hours</h3>
+        <dl class="footer-hours">
+          <dt>Mon – Fri</dt><dd>7am – 9pm</dd>
+          <dt>Saturday</dt><dd>8am – 10pm</dd>
+          <dt>Sunday</dt><dd>8am – 6pm</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="footer-year">2024</span> Ember &amp; Grain. All rights reserved.</p>
+        <nav aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <span aria-hidden="true">·</span>
+          <a href="#">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
